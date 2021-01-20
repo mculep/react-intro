@@ -8,13 +8,13 @@ const data = [
         url: "/one.jpeg"
     },
     {
-        title: "Can't we have just a salad?",
-        description: "Salad",
+        title: "How did you find me in the wilderness?",
+        description: "Wilderness",
         url: "/two.jpeg"
     },
     {
-        title: "Can't we have just a salad?",
-        description: "Salad",
+        title: "We are ready to go pro",
+        description: "Lords cheeps",
         url: "/three.jpeg"
     }
 ];
@@ -27,6 +27,7 @@ function PhotoGallery() {
             {
                 data.map(i => <PhotoCard 
                                 title={i.title}
+                                description={i.description}
                                 url={i.url} />)
             }
         </div>
